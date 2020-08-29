@@ -38,22 +38,25 @@ Install-Module -Name Azure500AD -Repository PSGallery -Verbose
 
 Authenticate to Azure AD
 ```
-powershell Connect-AzureAD
+Connect-AzureAD
 ```
 
 PasswordProfile - Specifies the user's password profile. Note that the parameter type for this parameter is "PasswordProfile". in order to pass a parameter of this type, you first need to create a variable in PowerShell with that type. We can do that with the New-Object cmdlet:
 
-```powershell $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+```
+$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 ```
 
 Then you can proceed to set the value of the password in this variable:
 
-```powershell $PasswordProfile.Password = "<Password>"
+```
+$PasswordProfile.Password = "<Password>"
 ```
 
 To create the user, call the New-AzureADUser cmdlet with the parameter values:
 
-```powershell New-AzureADUser -AccountEnabled $True -DisplayName "First Last" -PasswordProfile $PasswordProfile -MailNickName "FirstL" -UserPrincipalName "FirstL@<Domain>.com"
+```
+New-AzureADUser -AccountEnabled $True -DisplayName "First Last" -PasswordProfile $PasswordProfile -MailNickName "FirstL" -UserPrincipalName "FirstL@<Domain>.com"
 ```
 
 PowerShell will return the new user object you just created and show the ObjectId:
