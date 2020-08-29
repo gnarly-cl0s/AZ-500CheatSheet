@@ -58,3 +58,21 @@ To create the user, call the New-AzureADUser cmdlet with the parameter values:
 ```
 "New-AzureADUser -AccountEnabled $True -DisplayName "First Last" -PasswordProfile $PasswordProfile -MailNickName "FirstL" -UserPrincipalName "FirstL@<Domain>.com""
 ```
+
+Creating an Azure AD group
+```
+New-AzureADGroup -DisplayName DC -MailEnabled $false -MailNickName NotSet -SecurityEnabled $true
+```
+
+Add a group member
+```
+"$group = Get-AzureADGroup -Filter "DisplayName eq 'DC'""
+
+Get-AzureADGroupMember -ObjectId $group.ObjectId
+
+Get-AzureADUser | Where-Object -FilterScript { $_.UserType -eq 'Member' } |
+Select-Object -Property objectId, DisplayName
+
+Add-AzureADGroupMember -ObjectId $group.ObjectId `
+    -RefObjectId "<objectId from previous get command>"
+```
