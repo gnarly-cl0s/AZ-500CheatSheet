@@ -10,6 +10,8 @@ https://docs.microsoft.com/en-us/azure/active-directory/#pivot=products&panel=in
 
 ### Azure Active Directory users, groups, roles, and licenses documentation | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/
+https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal
+https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets
 
 ### Add or delete users - Azure Active Directory | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory
