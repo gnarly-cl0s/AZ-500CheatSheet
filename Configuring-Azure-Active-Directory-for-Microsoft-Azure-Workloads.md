@@ -18,8 +18,8 @@ https://docs.microsoft.com/en-us/azure/active-directory/external-identities/dele
 https://docs.microsoft.com/en-us/azure/active-directory/
 
 ### Azure Active Directory users, groups, roles, and licenses documentation | Microsoft Docs
-https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal
+https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/ <BR>
+https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal <BR>
 https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets
 
 ### Add or delete users - Azure Active Directory | Microsoft Docs
