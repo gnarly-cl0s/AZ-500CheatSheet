@@ -1,6 +1,6 @@
-# Azure CLI Cheatsheet
-Security Engineer Prep for Azure 
-## Configuring Azure Active Directory for Microsoft Azure Workloads
+# Azure Security Engineer Study Guide Prep For AZ-500
+
+## Domain 1 (Manage identity and access (30-35%)) Configuring Azure Active Directory for Microsoft Azure Workloads
 
 ### Quickstart: Add guest users in the Azure portal - Azure Active Directory | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal
@@ -31,6 +31,8 @@ https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroup?view
 ### What is Azure Active Directory B2B collaboration? - Azure Active Directory | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b
 
+### Azure Active Directory Identity Protection | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection
 
 ### Powershell Commands
 Getting AzureAD powershell module
@@ -78,3 +80,7 @@ Select-Object -Property objectId, DisplayName
 Add-AzureADGroupMember -ObjectId $group.ObjectId `
     -RefObjectId "<objectId from previous get command>"
 ```
+
+### Create App Registration
+https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal
+https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
