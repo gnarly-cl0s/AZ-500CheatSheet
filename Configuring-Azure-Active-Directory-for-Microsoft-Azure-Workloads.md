@@ -2,8 +2,17 @@
 
 ## Domain 1 (Manage identity and access (30-35%)) Configuring Azure Active Directory for Microsoft Azure Workloads
 
-### Quickstart: Add guest users in the Azure portal - Azure Active Directory | Microsoft Docs
+### Quickstart: Add guest users in the Azure portal
 https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal
+
+### Quickstart: Add a guest user with PowerShell
+https://docs.microsoft.com/en-us/azure/active-directory/external-identities/b2b-quickstart-invite-powershell
+
+### Add Azure Active Directory B2B collaboration users (Guest) in the Azure portal
+https://docs.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator
+
+### Enable B2B external collaboration and manage who can invite guests
+https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations
 
 ### Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/
@@ -123,7 +132,14 @@ https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignment
 ### Powershell Commands
 Getting AzureAD powershell module
 ```
-Install-Module -Name Azure500AD -Repository PSGallery -Verbose
+Get-Module -ListAvailable AzureAD*
+```
+```
+Install-Module -Name AzureAD -Repository PSGallery -Verbose
+```
+Run the following command to connect to the tenant domain:
+```
+Connect-AzureAD -TenantDomain "<Tenant_Domain_Name>"
 ```
 
 Authenticate to Azure AD
@@ -165,4 +181,24 @@ Select-Object -Property objectId, DisplayName
 
 Add-AzureADGroupMember -ObjectId $group.ObjectId `
     -RefObjectId "<objectId from previous get command>"
+```
+
+Assign the Guest Inviter role to a user
+```
+Add-MsolRoleMember -RoleObjectId 95e79109-95c0-4d8e-aee3-d01accf2d47b -RoleMemberEmailAddress <RoleMemberEmailAddress>
+```
+
+Send guest invitation
+```
+New-AzureADMSInvitation -InvitedUserDisplayName ",DisplayName" -InvitedUserEmailAddress <email> -InviteRedirectURL https://myapps.microsoft.com -SendInvitationMessage $true
+```
+
+Verify the user exists in the directory
+```
+Get-AzureADUser -Filter "UserType eq 'Guest'"
+```
+
+Clean up users
+```
+Remove-AzureADUser -ObjectId "<UPN>"
 ```
