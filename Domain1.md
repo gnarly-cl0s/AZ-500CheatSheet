@@ -2,7 +2,7 @@
 
 ## Domain 1 (Manage identity and access (30-35%)) Configuring Azure Active Directory for Microsoft Azure Workloads
 
-### Quickstart: Add guest users in the Azure portal :heavy_check_mark:
+### Quickstart: Add guest users in the Azure portal - [x]
 https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal
 
 ### Quickstart: Add a guest user with PowerShell
