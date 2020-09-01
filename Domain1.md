@@ -2,49 +2,49 @@
 
 ## Domain 1 (Manage identity and access (30-35%)) Configuring Azure Active Directory for Microsoft Azure Workloads
 
-### Quickstart: Add guest users in the Azure portal - [x]
-https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal
+### Quickstart: Add guest users in the Azure portal 
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal
 
-### Quickstart: Add a guest user with PowerShell - [x]
-https://docs.microsoft.com/en-us/azure/active-directory/external-identities/b2b-quickstart-invite-powershell
+### Quickstart: Add a guest user with PowerShell
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/external-identities/b2b-quickstart-invite-powershell
 
-### Add Azure Active Directory B2B collaboration users (Guest) in the Azure portal - [x]
-https://docs.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator
+### Add Azure Active Directory B2B collaboration users (Guest) in the Azure portal
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator
 
 ### Enable B2B external collaboration and manage who can invite guests
-https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations - [x]
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations
 
 ### Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
-https://docs.microsoft.com/en-us/azure/active-directory/ - []
+- [] https://docs.microsoft.com/en-us/azure/active-directory/
 
-### Azure Active Directory users, groups, roles, and licenses documentation | Microsoft Docs - [x]
-https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/ <BR>
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal <BR>
-https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets
+### Azure Active Directory users, groups, roles, and licenses documentation | Microsoft Docs
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/ <BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal <BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets
 
-### Add or delete users - Azure Active Directory | Microsoft Docs - [x]
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory
+### Add or delete users - Azure Active Directory | Microsoft Docs
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory
 
-### Creating a new user in Azure AD | Microsoft Docs - [x]
-https://docs.microsoft.com/en-us/powershell/azure/active-directory/new-user-sample?view=azureadps-2.0
+### Creating a new user in Azure AD | Microsoft Docs
+- [x] https://docs.microsoft.com/en-us/powershell/azure/active-directory/new-user-sample?view=azureadps-2.0
 
-### New-AzureADUser (AzureAD) Syntax Options | Microsoft Docs - [x]
-https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduser?view=azureadps-2.0
+### New-AzureADUser (AzureAD) Syntax Options | Microsoft Docs
+- [x] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduser?view=azureadps-2.0
 
-### AzureAD | Microsoft Docs - [x]
-https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0
+### AzureAD | Microsoft Docs
+- [x] https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0
 
-### New-AzureADGroup (AzureAD) Syntax Options | Microsoft Docs - [x]
-https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroup?view=azureadps-2.0
+### New-AzureADGroup (AzureAD) Syntax Options | Microsoft Docs
+- [x] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroup?view=azureadps-2.0
 
-### What is Azure Active Directory B2B collaboration? - Azure Active Directory | Microsoft Docs - [x]
-https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b
+### What is Azure Active Directory B2B collaboration? - Azure Active Directory | Microsoft Docs
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b
 
-### New-AzureADUserAppRoleAssignment - [x]
-https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduserapproleassignment?view=azureadps-2.0
+### New-AzureADUserAppRoleAssignment
+- [x] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduserapproleassignment?view=azureadps-2.0
 
-### New-AzureADGroupAppRoleAssignment - [x]
-https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroupapproleassignment?view=azureadps-2.0
+### New-AzureADGroupAppRoleAssignment
+- [x] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroupapproleassignment?view=azureadps-2.0
 
 ### Create App Registration
 - [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal<BR>
