@@ -5,53 +5,62 @@
 ### Quickstart: Add guest users in the Azure portal - [x]
 https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal
 
-### Quickstart: Add a guest user with PowerShell
+### Quickstart: Add a guest user with PowerShell - [x]
 https://docs.microsoft.com/en-us/azure/active-directory/external-identities/b2b-quickstart-invite-powershell
 
-### Add Azure Active Directory B2B collaboration users (Guest) in the Azure portal
+### Add Azure Active Directory B2B collaboration users (Guest) in the Azure portal - [x]
 https://docs.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator
 
 ### Enable B2B external collaboration and manage who can invite guests
-https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations
+https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations - [x]
 
 ### Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
-https://docs.microsoft.com/en-us/azure/active-directory/
+https://docs.microsoft.com/en-us/azure/active-directory/ - []
 
-### Azure Active Directory users, groups, roles, and licenses documentation | Microsoft Docs
+### Azure Active Directory users, groups, roles, and licenses documentation | Microsoft Docs - [x]
 https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/ <BR>
 https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal <BR>
 https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets
 
-### Add or delete users - Azure Active Directory | Microsoft Docs
+### Add or delete users - Azure Active Directory | Microsoft Docs - [x]
 https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory
 
-### Creating a new user in Azure AD | Microsoft Docs
+### Creating a new user in Azure AD | Microsoft Docs - [x]
 https://docs.microsoft.com/en-us/powershell/azure/active-directory/new-user-sample?view=azureadps-2.0
 
-### New-AzureADUser (AzureAD) Syntax Options | Microsoft Docs
+### New-AzureADUser (AzureAD) Syntax Options | Microsoft Docs - [x]
 https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduser?view=azureadps-2.0
 
-### AzureAD | Microsoft Docs
+### AzureAD | Microsoft Docs - [x]
 https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0
 
-### New-AzureADGroup (AzureAD) Syntax Options | Microsoft Docs
+### New-AzureADGroup (AzureAD) Syntax Options | Microsoft Docs - [x]
 https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroup?view=azureadps-2.0
 
-### What is Azure Active Directory B2B collaboration? - Azure Active Directory | Microsoft Docs
+### What is Azure Active Directory B2B collaboration? - Azure Active Directory | Microsoft Docs - [x]
 https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b
 
-### New-AzureADUserAppRoleAssignment
+### New-AzureADUserAppRoleAssignment - [x]
 https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduserapproleassignment?view=azureadps-2.0
 
-### New-AzureADGroupAppRoleAssignment
+### New-AzureADGroupAppRoleAssignment - [x]
 https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroupapproleassignment?view=azureadps-2.0
 
 ### Create App Registration
-https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal<BR>
 https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app<BR>
 https://docs.microsoft.com/en-us/graph/auth-register-app-v2<BR>
 https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications<BR>
 https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory
+
+### How to: Use Azure PowerShell to create a service principal with a certificate
+https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-authenticate-service-principal-powershell
+
+### What are managed identities for Azure resources?
+https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
+
+### Application and service principal objects in Azure Active Directory
+https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
 
 ### Configure App Registration permission scopes
 https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent<BR>
