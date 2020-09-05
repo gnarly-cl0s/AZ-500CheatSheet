@@ -48,13 +48,13 @@
 
 ### Create App Registration
 - [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app<BR>
-https://docs.microsoft.com/en-us/graph/auth-register-app-v2<BR>
-https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications<BR>
-https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app<BR>
+- [x] https://docs.microsoft.com/en-us/graph/auth-register-app-v2<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications<BR>
+- [x] https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory
 
 ### How to: Use Azure PowerShell to create a service principal with a certificate
-https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-authenticate-service-principal-powershell
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-authenticate-service-principal-powershell
 
 ### What are managed identities for Azure resources?
 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
