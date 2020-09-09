@@ -57,14 +57,14 @@
 - [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-authenticate-service-principal-powershell
 
 ### What are managed identities for Azure resources?
-https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
 
 ### Application and service principal objects in Azure Active Directory
-https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
 
 ### Configure App Registration permission scopes
-https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent<BR>
-https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-create-service-principals
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent<BR>
+- [x] https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-create-service-principals
 
 ### Manage App Registration permission consent
 https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent<BR>
