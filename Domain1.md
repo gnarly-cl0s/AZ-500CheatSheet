@@ -67,33 +67,33 @@
 - [x] https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-create-service-principals
 
 ### Manage App Registration permission consent
-https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent<BR>
-https://docs.microsoft.com/en-us/graph/notifications-integration-app-registration
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent<BR>
+- [x] https://docs.microsoft.com/en-us/graph/notifications-integration-app-registration
 
 ### Configure Multi-Factor Authentication settings
-https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-userdevicesettings<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-userdevicesettings<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings
 
 ### Manage Azure AD directory groups
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-manage-groups<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-create-rule
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-manage-groups<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-create-rule
 
 
 ### Manage Azure AD users
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups<BR>
-https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups<BR>
+- [x] https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator<BR>
 
 ### Install and configure Azure AD Connect
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom<BR>
-https://auth0.com/docs/connections/enterprise/azure-active-directory/v2<BR>
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-accounts-permissions
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom<BR>
+- [x] https://auth0.com/docs/connections/enterprise/azure-active-directory/v2<BR>
+- [x] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-accounts-permissions
 
 ### Configure authentication methods
 https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods<BR>
