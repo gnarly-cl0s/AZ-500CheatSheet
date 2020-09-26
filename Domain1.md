@@ -284,3 +284,27 @@ $cert=New-SelfSignedCertificate -Subject "CN=DaemonConsoleCert" -CertStoreLocati
 ```
 Export this certificate to a file using the Manage User Certificate MMC snap-in accessible from the Windows Control Panel.
 
+# Get 'er installed for PS PIM
+Find-Module -Name Microsoft.Azure.ActiveDirectory.PIM.PSModule | Install-Module -Verbose -Force -AllowClobber
+
+# Enumerate commands
+Get-Command -Module Microsoft.Azure.ActiveDirectory.PIM.PSModule
+
+# Update help (not that it will help)
+Get-Help -Name Enable-PrivilegedRoleAssignment
+
+# Authenticate first
+Connect-PimService -UserName ''
+
+# Enumerate eligible roles
+Get-PrivilegedRoleAssignment
+
+# Activate a role
+$params = @{ 'RoleID' = '62e90394-69f5-4237-9190-012177145e10';
+             'Reason' = 'Testing PowerShell';
+             'Duration' = '0.5'
+           }
+Enable-PrivilegedRoleAssignment @params
+
+# Remove elevation
+Disable-PrivilegedRoleAssignment -RoleId '62e90394-69f5-4237-9190-012177145e10'
