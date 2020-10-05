@@ -1,21 +1,20 @@
-# Azure Security Engineer Study Guide Prep For AZ-500
-# 30-35% Questions Pertain to this Domain
+# Azure Security Engineer Study Guide Prep For AZ-500 (30-35% Questions Pertain to this Domain)
 
-1. ## Manage Azure Active Directory identities
+## 1. Manage Azure Active Directory identities
 Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/active-directory/
 
 ### Configure security for service principals
 - [] https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
 
-#### How to: Use Azure PowerShell to create a service principal with a certificate
+How to: Use Azure PowerShell to create a service principal with a certificate
 - [] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-authenticate-service-principal-powershell
 
-#### Application and service principal objects in Azure Active Directory
+Application and service principal objects in Azure Active Directory
 - [] https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
 
-#### What are managed identities for Azure resources?
-- [x] https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
+What are managed identities for Azure resources?
+- [] https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
 
 ### Manage Azure AD directory groups
 - [] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/<BR>
@@ -71,7 +70,7 @@ Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods<BR>
 - [] https://docs.microsoft.com/en-us/azure/security/fundamentals/choose-ad-authn
 
-2. ## Authentication (PTA), OAuth, and passwordless
+## 2. Authentication (PTA), OAuth, and passwordless
 
 ### Transfer Azure subscriptions between Azure AD tenants
 - [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory<BR>
@@ -80,7 +79,7 @@ Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/billing/billing-subscription-transfer
 
 
-3. ## Configure secure access by using Azure AD
+## 3. Configure secure access by using Azure AD
 
 ### Monitor privileged access for Azure AD Privileged Identity Management (PIM)
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure<BR>
@@ -120,7 +119,7 @@ Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
 - [] https://www.microsoft.com/en-gb/security/technology/identity-access-management<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies
 
-4. ## Manage application access
+## 4. Manage application access
 
 ### Create App Registration
 - [] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal<BR>
@@ -144,7 +143,7 @@ Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal
 
 
-5. ## Manage access control
+## 5. Manage access control
 
 ### Configure subscription and resource permissions
 ### Configure resource group permissions
