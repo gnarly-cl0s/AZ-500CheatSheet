@@ -25,44 +25,44 @@ What are managed identities for Azure resources?
 - [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-create-rule
 
-#### New-AzureADGroup (AzureAD) Syntax Options | Microsoft Docs
+New-AzureADGroup (AzureAD) Syntax Options | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroup?view=azureadps-2.0
 
-#### New-AzureADGroupAppRoleAssignment
+New-AzureADGroupAppRoleAssignment
 - [] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroupapproleassignment?view=azureadps-2.0
 
 ### Manage Azure AD users
 - [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups<BR>
 - [] https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator<BR>
 
-#### Add or delete users - Azure Active Directory | Microsoft Docs
+Add or delete users - Azure Active Directory | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory
 
-#### Creating a new user in Azure AD | Microsoft Docs
+Creating a new user in Azure AD | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/powershell/azure/active-directory/new-user-sample?view=azureadps-2.0
 
-#### New-AzureADUser (AzureAD) Syntax Options | Microsoft Docs
+New-AzureADUser (AzureAD) Syntax Options | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduser?view=azureadps-2.0
 
-#### Quickstart: Add guest users in the Azure portal 
+Quickstart: Add guest users in the Azure portal 
 - [] https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal
 
-#### Quickstart: Add a guest user with PowerShell
+Quickstart: Add a guest user with PowerShell
 - [] https://docs.microsoft.com/en-us/azure/active-directory/external-identities/b2b-quickstart-invite-powershell
 
-#### What is Azure Active Directory B2B collaboration? - Azure Active Directory | Microsoft Docs
+What is Azure Active Directory B2B collaboration? - Azure Active Directory | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b
 
-#### Add Azure Active Directory B2B collaboration users (Guest) in the Azure portal
+Add Azure Active Directory B2B collaboration users (Guest) in the Azure portal
 - [] https://docs.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator
 
-#### Enable B2B external collaboration and manage who can invite guests
+Enable B2B external collaboration and manage who can invite guests
 - [] https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations
 
-#### AzureAD | Microsoft Docs
+AzureAD | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0
 
-#### New-AzureADUserAppRoleAssignment
+New-AzureADUserAppRoleAssignment
 - [] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureaduserapproleassignment?view=azureadps-2.0
 
 ### Configure password writeback
@@ -87,16 +87,29 @@ What are managed identities for Azure resources?
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-deployment-plan<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/azure-pim-resource-rbac<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-email-notifications
+- [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-use-audit-log
+- [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts
 
 ### Configure Access Reviews
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-resource-roles-overview-dashboards<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-perform-security-review<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-start-security-review<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/governance/create-access-review
+- [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review
 
 ### Activate and configure PIM
+- [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-activate-role<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-getting-started#enable-pim
+- [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/azure-ad-pim-approval-workflow
+- [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-resource-roles-approval-workflow
+
+
+License requirements to use PIM - Azure Active Directory | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/subscription-requirements
+
+Getting started with Azure AD PIM PowerShell Module | GoToGuy Blog
+https://gotoguy.blog/2018/05/22/getting-started-with-azure-ad-pim-powershell-module/
 
 
 ### Implement Conditional Access policies including Multi-Factor Authentication (MFA)
@@ -110,6 +123,9 @@ What are managed identities for Azure resources?
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/conditional-access-azure-management<BR>
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/overview
 
+Multi-factor authentication (MFA) and PIM - Azure Active Directory | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-require-mfa
+
 ### Configure Azure AD identity protection
 - [] https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy<BR>
@@ -118,6 +134,9 @@ What are managed identities for Azure resources?
 - [] https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted<BR>
 - [] https://www.microsoft.com/en-gb/security/technology/identity-access-management<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies
+- [] https://docs.microsoft.com/en-us/azure/active-directory/governance/identity-governance-overview
+
+
 
 ## 4. Manage application access
 
@@ -148,6 +167,12 @@ What are managed identities for Azure resources?
 ### Configure subscription and resource permissions
 ### Configure resource group permissions
 ### Configure custom RBAC roles
+What is role-based access control (RBAC) for Azure resources? | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/role-based-access-control/overview
+
+Custom roles for Azure resources | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles
+
 ### Identify the appropriate role
 ### Apply principle of least privilege
 ### Interpret permissions
@@ -162,6 +187,15 @@ What are managed identities for Azure resources?
 - [] https://auth0.com/docs/connections/enterprise/azure-active-directory/v2<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-accounts-permissions
 
+IP Address Management (IPAM) | Microsoft Docs
+https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top
+
+Privileged Access Management for Active Directory Domain Services | Microsoft Docs
+https://docs.microsoft.com/en-us/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services
+
+Privileged access management in Office 365 | Microsoft Docs
+https://docs.microsoft.com/en-us/office365/securitycompliance/privileged-access-management-overview
+
 # Powershell Commands
 https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7<BR>
 ### Getting AzureAD powershell module
@@ -173,6 +207,45 @@ import-module azuread
 
 ```
 Get-Module -ListAvailable AzureAD*
+```
+
+Get 'er installed
+```
+Find-Module -Name Microsoft.Azure.ActiveDirectory.PIM.PSModule | Install-Module -Verbose -Force -AllowClobber
+```
+
+Enumerate commands
+```
+Get-Command -Module Microsoft.Azure.ActiveDirectory.PIM.PSModule
+```
+
+Update help (not that it will help)
+```
+Get-Help -Name Enable-PrivilegedRoleAssignment
+```
+
+Authenticate first
+```
+Connect-PimService -UserName 'jason@timw.info'
+```
+
+Enumerate eligible roles
+```
+Get-PrivilegedRoleAssignment
+```
+
+Activate a role
+```
+$params = @{ 'RoleID' = '62e90394-69f5-4237-9190-012177145e10';
+             'Reason' = 'Testing PowerShell';
+             'Duration' = '0.5'
+           }
+Enable-PrivilegedRoleAssignment @params
+```
+
+Remove elevation
+```
+Disable-PrivilegedRoleAssignment -RoleId '62e90394-69f5-4237-9190-012177145e10'
 ```
 
 Run the following command to connect to the tenant domain:
