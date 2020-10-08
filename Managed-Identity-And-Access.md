@@ -3,6 +3,7 @@
 ## 1. Manage Azure Active Directory identities
 Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/active-directory/
+- [] https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles
 
 ### Configure security for service principals
 - [] https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
@@ -165,13 +166,23 @@ https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-mana
 ## 5. Manage access control
 
 ### Configure subscription and resource permissions
+- [] https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
+- [] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles 
+
+
 ### Configure resource group permissions
+- [] https://docs.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin
+
 ### Configure custom RBAC roles
 What is role-based access control (RBAC) for Azure resources? | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/overview
 
 Custom roles for Azure resources | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles
+
+- [] https://docs.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-powershell
+- [] https://docs.microsoft.com/en-us/workplace-analytics/use/using-powershell-to-assign-roles
+
 
 ### Identify the appropriate role
 ### Apply principle of least privilege
@@ -412,4 +423,50 @@ Enable-PrivilegedRoleAssignment @params
 Remove elevation
 ```
 Disable-PrivilegedRoleAssignment -RoleId '62e90394-69f5-4237-9190-012177145e10'
+```
+
+Play with roles ("Where is ____ role?!")
+```
+Get-AzureADDirectoryRole | Select-Object -Property DisplayName, Description | Sort-Object -Property DisplayName
+```
+
+```
+Get-AzureADDirectoryRoleTemplate | Select-Object -Property DisplayName, Description | Sort-Object -Property DisplayName
+```
+
+```
+$RoleTemplate = Get-AzureADDirectoryRoleTemplate | Where-Object { $_.DisplayName -eq "Power BI Service Administrator" }
+Enable-AzureADDirectoryRole -RoleTemplateId $RoleTemplate.ObjectId
+```
+
+Fetch user to assign to role
+```
+$roleMember = Get-AzureADUser -ObjectId "<user>"
+```
+
+Fetch User Account Administrator role instance
+```
+$role = Get-AzureADDirectoryRole | Where-Object { $_.displayName -eq 'Power BI Service Administrator' }
+```
+
+If role instance does not exist, instantiate it based on the role template
+```
+if ($role -eq $null) {
+    # Instantiate an instance of the role template
+    $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where-Object { $_.displayName -eq 'User Account Administrator' }
+    Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+
+    # Fetch User Account Administrator role instance again
+    $role = Get-AzureADDirectoryRole | Where-Object { $_.displayName -eq 'User Account Administrator' }
+}
+```
+
+Add user to role
+```
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $roleMember.ObjectId
+```
+
+Fetch role membership for role to confirm
+```
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | Get-AzureADUser
 ```
