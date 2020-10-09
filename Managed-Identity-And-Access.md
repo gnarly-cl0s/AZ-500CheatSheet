@@ -33,8 +33,9 @@ New-AzureADGroupAppRoleAssignment
 - [] https://docs.microsoft.com/en-us/powershell/module/azuread/new-azureadgroupapproleassignment?view=azureadps-2.0
 
 ### Manage Azure AD users
-- [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups<BR>
-- [] https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator<BR>
+- [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups
+
+- [] https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator
 
 Add or delete users - Azure Active Directory | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory
@@ -71,7 +72,22 @@ New-AzureADUserAppRoleAssignment
 - [] https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods<BR>
 - [] https://docs.microsoft.com/en-us/azure/security/fundamentals/choose-ad-authn
 
+What is password hash synchronization with Azure AD? | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs
+
+Active Directory Federation Services in Azure | Microsoft Docs
+https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/how-to-connect-fed-azure-adfs
+
+Azure AD Connect and federation | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-fed-whatis
+
 ## 2. Authentication (PTA), OAuth, and passwordless
+Azure AD Connect: Pass-through Authentication | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta
+
+Azure AD Connect: Seamless Single Sign-On | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso
+
 
 ### Transfer Azure subscriptions between Azure AD tenants
 - [] https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory<BR>
@@ -114,6 +130,9 @@ https://gotoguy.blog/2018/05/22/getting-started-with-azure-ad-pim-powershell-mod
 
 
 ### Implement Conditional Access policies including Multi-Factor Authentication (MFA)
+Quickstart - Require multi-factor authentication (MFA) for specific apps with Azure Active Directory conditional access | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/app-based-mfa
+
 - [] https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-userdevicesettings<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings<BR>
@@ -206,6 +225,10 @@ https://docs.microsoft.com/en-us/microsoft-identity-manager/pam/privileged-ident
 
 Privileged access management in Office 365 | Microsoft Docs
 https://docs.microsoft.com/en-us/office365/securitycompliance/privileged-access-management-overview
+
+What is hybrid identity with Azure Active Directory? | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-hybrid-identity
+
 
 # Powershell Commands
 https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7<BR>
