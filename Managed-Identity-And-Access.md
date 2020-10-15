@@ -1,4 +1,21 @@
 # Azure Security Engineer Study Guide Prep For AZ-500 (30-35% Questions Pertain to this Domain)
+Azure/azure-policy: Repository for Azure Resource Policy samples
+https://github.com/azure/azure-policy
+
+GitHub - Azure-Samples/app-service-api-dotnet-todo-list: A simple Todo list application built using Web API and Azure API Apps
+https://github.com/Azure-Samples/app-service-api-dotnet-todo-list
+
+Azure identity & access security best practices | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/security/azure-security-identity-management-best-practices
+
+Azure REST API Reference | Microsoft Docs
+https://docs.microsoft.com/en-us/rest/api/azure/
+
+REST API Browser | Microsoft Docs
+https://docs.microsoft.com/en-us/rest/api/
+
+Microsoft Graph or the Azure AD Graph - Microsoft 365 Developer Blog
+https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-or-azure-ad-graph/
 
 ## 1. Manage Azure Active Directory identities
 Azure Active Directory Documentation - Tutorials, API Reference | Microsoft Docs
@@ -14,8 +31,6 @@ How to: Use Azure PowerShell to create a service principal with a certificate
 Application and service principal objects in Azure Active Directory
 - [] https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals
 
-What are managed identities for Azure resources?
-- [] https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview
 
 ### Manage Azure AD directory groups
 - [] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/<BR>
@@ -98,6 +113,12 @@ https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-ss
 
 ## 3. Configure secure access by using Azure AD
 
+Microsoft identity platform (v2.0) overview - Azure | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview
+
+Why update to Microsoft identity platform (v2.0) | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison
+
 ### Monitor privileged access for Azure AD Privileged Identity Management (PIM)
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user<BR>
@@ -121,6 +142,8 @@ https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-ss
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/azure-ad-pim-approval-workflow
 - [] https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-resource-roles-approval-workflow
 
+What are access reviews? - Azure Active Directory | Microsoft Docs
+https://docs.microsoft.com/bs-latn-ba/azure/active-directory/governance/access-reviews-overview
 
 License requirements to use PIM - Azure Active Directory | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/subscription-requirements
@@ -146,6 +169,9 @@ https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/app-b
 Multi-factor authentication (MFA) and PIM - Azure Active Directory | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-require-mfa
 
+Grant access to other administrators to manage PIM - Azure Active Directory | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-give-access-to-pim
+
 ### Configure Azure AD identity protection
 - [] https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy<BR>
@@ -156,9 +182,11 @@ https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-mana
 - [] https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies
 - [] https://docs.microsoft.com/en-us/azure/active-directory/governance/identity-governance-overview
 
-
-
 ## 4. Manage application access
+
+How and why applications are added to Azure Active Directory | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-how-applications-are-added
+
 
 ### Create App Registration
 - [] https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal<BR>
@@ -166,6 +194,10 @@ https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-mana
 - [] https://docs.microsoft.com/en-us/graph/auth-register-app-v2<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications<BR>
 - [] https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory
+
+Register your application to use Azure Active Directory | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/developer-guidance-for-integrating-applications
+
 
 ### Configure App Registration permission scopes
 - [] https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent<BR>
@@ -188,6 +220,23 @@ https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-mana
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
 - [] https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles 
 
+Application roles | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles
+
+Azure Management - Governance | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/
+
+Understand deny assignments for Azure resources | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/role-based-access-control/deny-assignments
+
+Organize your resources with Azure management groups - Azure Governance | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/management-groups/
+
+Elevate access to manage all Azure subscriptions and management groups | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin
+
+Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings | Microsoft Docs
+https://docs.microsoft.com/en-us/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings
 
 ### Configure resource group permissions
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin
@@ -198,7 +247,6 @@ What is role-based access control (RBAC) for Azure resources? | Microsoft Docs
 
 Custom roles for Azure resources | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles
-
 - [] https://docs.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-powershell
 - [] https://docs.microsoft.com/en-us/workplace-analytics/use/using-powershell-to-assign-roles
 
@@ -208,14 +256,46 @@ Custom roles for Azure resources | Microsoft Docs
 ### Interpret permissions
 ### Check access
 
+What are security defaults?
+https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults
+
+Characteristics of multiple tenant interaction - Azure Active Directory | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/licensing-directory-independence
+
+Change the key vault tenant ID after a subscription move - Azure Key Vault | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/key-vault/key-vault-subscription-move-fix
+
 # EXTRA
+
+Adal to Msal · AzureAD/microsoft-authentication-library-for-dotnet Wiki · GitHub
+https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Adal-to-Msal
+
+
 ### Install and configure Azure AD Connect
+Download Azure AD Connect
+https://www.microsoft.com/en-us/download/details.aspx?id=47594
+
+Azure AD Connect: Supported topologies | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-topologies
+
+Azure AD Connect sync: Operational tasks and considerations | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-staging-server
+
+Azure AD UserPrincipalName population | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-userprincipalname
+
+Azure AD Connect: Prerequisites and hardware | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites
+
 - [] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom<BR>
 - [] https://auth0.com/docs/connections/enterprise/azure-active-directory/v2<BR>
 - [] https://docs.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-accounts-permissions
+
+Prepare a non-routable domain for directory synchronization | Microsoft Docs
+https://docs.microsoft.com/en-us/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization
 
 IP Address Management (IPAM) | Microsoft Docs
 https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top
@@ -229,9 +309,80 @@ https://docs.microsoft.com/en-us/office365/securitycompliance/privileged-access-
 What is hybrid identity with Azure Active Directory? | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-hybrid-identity
 
+Factors influencing the performance of Azure AD Connect | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-performance-factors
+
+Azure AD Connect sync: Scheduler | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-feature-scheduler
+
+The Azure AD Connect Sync Service Manager Metaverse Search | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-service-manager-ui-mvsearch
+
+Azure AD Connect Synchronization Service Manager Operations | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-service-manager-ui-operations
+
+Azure AD Connect sync: Make a configuration change in Azure AD Connect sync | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-change-the-configuration
+
+Azure AD Connect and federation | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-fed-whatis
+
+How to Disable Office365 Federation
+https://support.okta.com/help/s/article/Disable-Office365-Federation-from-Active-Directory-Domain
+
+MSOnline | Microsoft Docs
+https://docs.microsoft.com/en-us/powershell/module/msonline/?view=azureadps-1.0
+
+Understand the OAuth 2.0 authorization code flow in Azure AD | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-protocols-oauth-code
+
+### Governance
+Overview of Azure Blueprints - Azure Blueprints | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/blueprints/overview
+
+Overview of Azure Resource Graph - Azure Resource Graph | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/resource-graph/overview
+
+Overview of Azure Cost Management | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/cost-management/overview-cost-mgt
+
+Overview of Azure Policy - Azure Policy | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/policy/overview
+
+Create a custom policy definition - Azure Policy | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/policy/tutorials/create-custom-policy-definition
+
+Details of the policy definition structure - Azure Policy | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure
+
+Get policy compliance data - Azure Policy | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/policy/how-to/get-compliance-data
+
+Remediate non-compliant resources - Azure Policy | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources
+
 
 # Powershell Commands
 https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7<BR>
+
+Use Azure service principals with Azure PowerShell | Microsoft Docs
+https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-2.2.0
+
+Overview of Azure PowerShell | Microsoft Docs
+https://docs.microsoft.com/en-us/powershell/azure/overview?view=azps-1.8.0
+
+Get-AzProviderOperation (Az.Resources) | Microsoft Docs
+https://docs.microsoft.com/en-us/powershell/module/az.resources/get-azprovideroperation?view=azps-1.8.0
+
+Get-AzRoleDefinition (Az.Resources) | Microsoft Docs
+https://docs.microsoft.com/en-us/powershell/module/az.resources/get-azroledefinition?view=azps-1.8.0
+
+New-AzRoleDefinition (Az.Resources) | Microsoft Docs
+https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azroledefinition?view=azps-1.8.0
+
+Troubleshoot RBAC for Azure resources | Microsoft Docs
+https://docs.microsoft.com/en-us/azure/role-based-access-control/troubleshooting
+
 ### Getting AzureAD powershell module
 ```
 install-module azuread
@@ -241,45 +392,6 @@ import-module azuread
 
 ```
 Get-Module -ListAvailable AzureAD*
-```
-
-Get 'er installed
-```
-Find-Module -Name Microsoft.Azure.ActiveDirectory.PIM.PSModule | Install-Module -Verbose -Force -AllowClobber
-```
-
-Enumerate commands
-```
-Get-Command -Module Microsoft.Azure.ActiveDirectory.PIM.PSModule
-```
-
-Update help (not that it will help)
-```
-Get-Help -Name Enable-PrivilegedRoleAssignment
-```
-
-Authenticate first
-```
-Connect-PimService -UserName 'jason@timw.info'
-```
-
-Enumerate eligible roles
-```
-Get-PrivilegedRoleAssignment
-```
-
-Activate a role
-```
-$params = @{ 'RoleID' = '62e90394-69f5-4237-9190-012177145e10';
-             'Reason' = 'Testing PowerShell';
-             'Duration' = '0.5'
-           }
-Enable-PrivilegedRoleAssignment @params
-```
-
-Remove elevation
-```
-Disable-PrivilegedRoleAssignment -RoleId '62e90394-69f5-4237-9190-012177145e10'
 ```
 
 Run the following command to connect to the tenant domain:
@@ -492,4 +604,65 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $roleMember
 Fetch role membership for role to confirm
 ```
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId | Get-AzureADUser
+```
+
+Create a service principal for automated Azure PowerShell login
+```
+$cert = New-SelfSignedCertificate -CertStoreLocation "cert:\CurrentUser\My" `
+    -Subject "CN=psautoauth" `
+    -KeySpec KeyExchange
+
+$keyValue = [System.Convert]::ToBase64String($cert.GetRawCertData())
+
+$sp = New-AzADServicePrincipal -DisplayName 'psautoauth' `
+    -CertValue $keyValue `
+    -EndDate $cert.NotAfter `
+    -StartDate $cert.NotBefore
+Start-Sleep -Seconds 20
+
+New-AzRoleAssignment -RoleDefinitionName Contributor -ServicePrincipalName $sp.ApplicationId # -Scope defaults to subscription level
+
+$TenantId = (Get-AzSubscription -SubscriptionName "Microsoft Azure Sponsorship").TenantId
+
+$ApplicationId = (Get-AzADApplication -DisplayNameStartWith 'psautoauth').ApplicationId
+
+$Thumbprint = (Get-ChildItem cert:\CurrentUser\My\ | Where-Object { $_.Subject -eq "CN=psautoauth" }).Thumbprint
+
+Connect-AzAccount -ServicePrincipal `
+    -CertificateThumbprint $Thumbprint `
+    -ApplicationId $ApplicationId `
+    -TenantId $TenantId
+
+Get-AzContext
+```
+
+Operations for Microsoft Support as a example
+```
+Get-AzProviderOperation 'Microsoft.Support/*' | Format-Table -Property Operation, Description -AutoSize
+```
+
+Extract similar role for editing
+```
+Get-AzRoleDefinition -Name 'Reader' | ConvertTo-Json | Out-File 'D:\ReaderSupportRole.json'
+```
+
+Get subscription ID and include as scope to extracted json file above
+```
+Get-AzSubscription | Select-Object -Property id
+```
+
+Create 
+```
+New-AzRoleDefinition -InputFile 'D:\ReaderSupportRole.json'
+```
+
+Check new role creation
+```
+Get-AzRoleDefinition | Where-Object -FilterScript { $_.IsCustom -eq $true } | Format-Table -Property Name, IsCustom
+
+Get-AzRoleDefinition 'Help Desk Support' | Remove-AzRoleDefinition -Force
+
+Get-AzRoleDefinition | ? { $_.IsCustom -eq $true } | Remove-AzRoleDefinition -Force
+
+Remove-AzRoleDefinition -Id '22222222-2222-2222-2222-222222222222'
 ```
