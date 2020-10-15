@@ -636,7 +636,7 @@ Connect-AzAccount -ServicePrincipal `
 Get-AzContext
 ```
 
-Operations for Microsoft Support as a example
+Operations for Microsoft Support as a example in order to create custom role
 ```
 Get-AzProviderOperation 'Microsoft.Support/*' | Format-Table -Property Operation, Description -AutoSize
 ```
