@@ -1,0 +1,53 @@
+﻿//List 10 Storm events happened in Florida 
+StormEvents
+| where  State == "FLORIDA"
+| take 10 
+
+//Search for the keyword flood case insensitive in all fields. 
+//Works like a full text search
+StormEvents
+| search "Flood"
+
+//List 10 Storm events for States with names ending with NORTH 
+StormEvents
+| where State endswith "NORTH"
+| take 10
+
+//List 100 Storm events
+StormEvents
+| limit 100
+
+//Count total number of Storm events 
+StormEvents | count ;
+
+//List Thunderstorms in FLORIDA
+StormEvents
+| where  State == "FLORIDA" and EventType contains_cs "Thunderstorm"
+
+//Count Storm events by State
+StormEvents
+| summarize count() by State
+
+//Count Storm events by State
+StormEvents
+| summarize NumberOfStorms=count() by State
+
+//Count Storm events by State
+StormEvents
+| summarize NumberOfStorms=count() by State, StormType = strcat("Storm type was " , EventType)
+
+//Count Storm events by Year and Month
+StormEvents
+| summarize NumberOfStorms=count() by YearOfEvent=datetime_part("Year",StartTime), MonthOfEvent=datetime_part("Month",StartTime)
+
+//List top 10 Storm events by State, sort by high to low number of Storms
+StormEvents
+| summarize count() by State
+| order by count_
+| take 10
+
+//List top 10 Storm events and display State, EventType, EndTime and StartTime and extend the table with a calculated column called Duration
+StormEvents
+| project State, EventType, EndTime, StartTime
+| extend Duration = (EndTime - StartTime)
+| limit 10 

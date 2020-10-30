@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspace": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the Log Analytics workspace your Azure Sentinel connects to"
+            }
+        },
+        "workspaceExists": {
+            "type": "string",
+            "defaultValue": "No",
+            "allowedValues": [
+                "No",
+                "Yes"
+            ],
+            "metadata": {
+                "description": "Specify whether you already have a Log Analytics workspace for your Azure Sentinel"
+            }
+        },
+        "workspaceSku": {
+            "type": "string",
+            "defaultValue": "PerGB2018",
+            "allowedValues": [
+                "PerGB2018"
+            ],
+            "metadata": {
+                "description": "SKU of the Log Analytics workspace"
+            }
+        },
+        "dataRetentionInDays": {
+            "type": "int",
+            "defaultValue" : 90,
+            "minValue": 90,
+            "maxValue": 365,
+            "metadata": {
+                "description": "Data retention in Log Analytics workspace"
+            }
+        }
+    },
+    "variables": {
+        "azureSentinelSolution": "[concat('SecurityInsights', '(', parameters('workspace'), ')')]"
+    },
+    "resources": [
+        {
+            "condition": "[equals(parameters('workspaceExists'), 'No')]",
+            "type": "Microsoft.OperationalInsights/workspaces",
+            "apiVersion": "2015-11-01-preview",
+            "name": "[parameters('workspace')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "sku": {
+                    "name": "[parameters('workspaceSku')]"
+                },
+                "retentionInDays": "[parameters('dataRetentionInDays')]"
+            }
+        },
+        {
+            "type": "Microsoft.OperationsManagement/solutions",
+            "apiVersion": "2015-11-01-preview",
+            "name": "[variables('azureSentinelSolution')]",
+            "location": "[resourceGroup().location]",
+            "plan": {
+                "name": "[variables('azureSentinelSolution')]",
+                "promotionCode": "",
+                "product": "OMSGallery/SecurityInsights",
+                "publisher": "Microsoft"
+            },
+            "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspace'))]"
+            ],
+            "properties": {
+                "workspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces/', parameters('workspace'))]"
+            }
+        }
+    ]
+}

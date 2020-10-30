@@ -1,0 +1,118 @@
+{
+    "properties": {
+        "description": "Create a production subscription with the proper settings.",
+        "targetScope": "subscription",
+        "parameters": {
+            "basic-Vnet_vnetName": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "vnetName (Basic-Vnet)",
+                    "description": "VNet name"
+                },
+                "defaultValue": "VNet1",
+                "allowedValues": []
+            },
+            "basic-Vnet_vnetAddressPrefix": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "vnetAddressPrefix (Basic-Vnet)",
+                    "description": "Address prefix"
+                },
+                "defaultValue": "10.0.0.0/16",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet1Prefix": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet1Prefix (Basic-Vnet)",
+                    "description": "Subnet 1 Prefix"
+                },
+                "defaultValue": "10.0.0.0/24",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet1Name": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet1Name (Basic-Vnet)",
+                    "description": "Subnet 1 Name"
+                },
+                "defaultValue": "Subnet1",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet2Prefix": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet2Prefix (Basic-Vnet)",
+                    "description": "Subnet 2 Prefix"
+                },
+                "defaultValue": "10.0.1.0/24",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet2Name": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet2Name (Basic-Vnet)",
+                    "description": "Subnet 2 Name"
+                },
+                "defaultValue": "Subnet2",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet3Prefix": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet3Prefix (Basic-Vnet)",
+                    "description": "Subnet 3 Prefix"
+                },
+                "defaultValue": "10.0.3.0/24",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet3Name": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet3Name (Basic-Vnet)",
+                    "description": "Subnet 3 Name"
+                },
+                "defaultValue": "Subnet3",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet4Prefix": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet4Prefix (Basic-Vnet)",
+                    "description": "Subnet 4 Prefix"
+                },
+                "defaultValue": "10.0.4.0/24",
+                "allowedValues": []
+            },
+            "basic-Vnet_subnet4Name": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "subnet4Name (Basic-Vnet)",
+                    "description": "Subnet 4 Name"
+                },
+                "defaultValue": "Subnet4",
+                "allowedValues": []
+            },
+            "tagValue": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Environment tag creation",
+                    "description": null
+                },
+                "defaultValue": "Development"
+            },
+            "networkOwners": {
+                "type": "array",
+                "metadata": {
+                    "description": "List of AAD object IDs that is assigned Owner role at the resource group",
+                    "strongType": "PrincipalId"
+                }
+            }
+        },
+        "resourceGroups": {
+            "Networking": {
+                "description": "Resource group for use with Vnet template"
+            }
+        }
+    }
+}

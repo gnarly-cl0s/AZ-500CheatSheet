@@ -129,6 +129,10 @@ Manage the availability of Windows VMs in Azure | Microsoft Docs
 
 Azure Site Recovery Documentation - Tutorials, API Reference | Microsoft Docs
  -[] https://docs.microsoft.com/en-us/azure/site-recovery/
+
+ Tutorial - High availability for Windows VMs in Azure | Microsoft Docs
+ - [] https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-availability-sets#check-for-available-vm-sizes
+
 ### configure endpoint protection
 Windows Defender Advanced Threat Protection with Azure Security Center
 - [] https://docs.microsoft.com/en-us/azure/security-center/security-center-wdatp
@@ -143,6 +147,10 @@ Azure VM Extensions
 
 Monitoring Azure applications and resources | Microsoft Docs
 - [] https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview
+
+Manage Updates on Multiple Machines
+- [] https://docs.microsoft.com/en-us/azure/automation/manage-update-multi#enable-update-management-for-non-azure-virtual-machines-and-computers
+
 ### configure authentication for Azure Container Registry
 ### configure security for different types of containers
 Serverless v. Containers
@@ -151,9 +159,33 @@ Serverless v. Containers
 Container Monitoring in Azure
 - [] https://docs.microsoft.com/en-us/azure/azure-monitor/insights/containers
 
+Deploying container instances in Azure
+- [] https://docs.microsoft.com/en-us/azure/container-instances/container-instances-quickstart-powershell
+
+Container Security
+- -[] https://docs.microsoft.com/en-us/azure/container-instances/container-instances-image-security
+
+Container Monitoring Solution in Azure
+- [] https://docs.microsoft.com/en-us/azure/azure-monitor/insights/containers
+
+Azure Monitoring Solutions
+- [] https://docs.microsoft.com/en-us/azure/azure-monitor/insights/solutions
+
+How to Query Logs from Azure Monitor for Containers
+- [] https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-log-search
+
+How to update Azure Monitor for containers to enable metrics
+- [] https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-update-metrics
+
 ### implement vulnerability management
 ### configure isolation for AKS
+Azure Kubernetes Service
+- [] https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes
+
 ### configure security for container registry
+ Azure Container Registry SKUS
+ - [] https://docs.microsoft.com/en-us/azure/container-registry/container-registry-skus
+
 ### implement Azure Disk Encryption
 About disks storage for Azure Windows VMs
 - [] https://docs.microsoft.com/en-us/azure/virtual-machines/windows/about-disks-and-vhds
@@ -164,6 +196,12 @@ High-performance Premium Storage and managed disks for VMs
 ### configure authentication and security for Azure App Service
 ### configure SSL/TLS certs
 ### configure authentication for Azure Kubernetes Service
+Integrate Azure AD with Azure Kubernetes Service
+- [] https://docs.microsoft.com/en-us/azure/aks/azure-ad-integration
+
+Access and Identity Options for Azure Kubernetes
+- [] https://docs.microsoft.com/en-us/azure/aks/concepts-identity#role-based-access-controls-rbac
+
 ### configure automatic updates
 Update Management solution in Azure | Microsoft Docs 
 - [] https://docs.microsoft.com/en-us/azure/automation/automation-update-management
@@ -193,8 +231,38 @@ Azure Management Groups
 Update Management Dynamic Groups
 - [] https://docs.microsoft.com/en-us/azure/automation/automation-update-management#using-dynamic-groups
 
+Elevate your access to manage all subscriptions and management groups
+- [] https://docs.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin
+
+Azure Governance Resources
+- [] https://docs.microsoft.com/en-us/azure/governance/azure-management
+
+Azure Automation Overview | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/automation/automation-intro
+
+Azure Resource Manager Overview | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview
+
+Best practices for Azure Resource Manager templates | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/azure-resource-manager/template-best-practices
+
+Azure Resource Manager template structure and syntax | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates
+
+Create and deploy an Azure Resource Manager template by using the Azure portal | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-quickstart-create-templates-use-the-portal?toc=%2Fazure%2Ftemplates%2Ftoc.json&bc=%2Fazure%2Ftemplates%2Fbreadcrumb%2Ftoc.json
+
+Create a policy assignment with a Resource Manager template - Azure Policy | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/governance/policy/assign-policy-template 
+
+Create a policy for non-compliant resources - Azure Policy | Microsoft Docs
+- [] https://docs.microsoft.com/en-us/azure/governance/policy/assign-policy-portal
+
+
 # Powershell Commands
 See Democode/powershell-scripts/ for examples of various uses since easier to follow and execute individually than all jammed into one page 
 Starting and Stopping Azure VMs
 - [] https://azure.microsoft.com/en-us/resources/videos/start-stop-restart-and-delete-vms-in-microsoft-azure-with-powershell/
 
+Azure High Availabilty Machines with PowerShell
+- [] https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-availability-sets

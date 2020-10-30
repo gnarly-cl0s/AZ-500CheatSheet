@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "blueprintId": "BLUEPRINT_ID",
+        "resourceGroups": {
+            "Networking": {
+                "name": "Networking",
+                "location": "eastus"
+            }
+        },
+        "parameters": {
+            "tagValue": {
+                "value": "Production"
+            },
+            "networkOwners": {
+                "value": [
+                    "PRINCIPAL_ID"
+                ]
+            }
+        }
+    },
+    "identity": {
+        "type": "systemAssigned"
+    },
+    "location": "eastus"
+}

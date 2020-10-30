@@ -383,6 +383,13 @@ https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azroledefini
 Troubleshoot RBAC for Azure resources | Microsoft Docs
 https://docs.microsoft.com/en-us/azure/role-based-access-control/troubleshooting
 
+Create a Custom Role-PowerShell
+https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles-powershell
+
+about_Splatting | Microsoft Docs
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-6)
+
+
 ### Getting AzureAD powershell module
 ```
 install-module azuread

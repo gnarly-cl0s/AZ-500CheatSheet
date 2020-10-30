@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vnetName": {
+            "value": "[parameters('basic-Vnet_vnetName')]"
+        },
+        "vnetAddressPrefix": {
+            "value": "[parameters('basic-Vnet_vnetAddressPrefix')]"
+        },
+        "subnet1Prefix": {
+            "value": "[parameters('basic-Vnet_subnet1Prefix')]"
+        },
+        "subnet1Name": {
+            "value": "[parameters('basic-Vnet_subnet1Name')]"
+        },
+        "subnet2Prefix": {
+            "value": "[parameters('basic-Vnet_subnet2Prefix')]"
+        },
+        "subnet2Name": {
+            "value": "[parameters('basic-Vnet_subnet2Name')]"
+        },
+        "subnet3Prefix": {
+            "value": "[parameters('basic-Vnet_subnet3Prefix')]"
+        },
+        "subnet3Name": {
+            "value": "[parameters('basic-Vnet_subnet3Name')]"
+        },
+        "subnet4Prefix": {
+            "value": "[parameters('basic-Vnet_subnet4Prefix')]"
+        },
+        "subnet4Name": {
+            "value": "[parameters('basic-Vnet_subnet4Name')]"
+        }
+    }
+}

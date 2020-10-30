@@ -1,0 +1,5 @@
+﻿SigninLogs
+| project UserId, IPAddress, Location, SourceSystem, TimeGenerated, UserPrincipalName
+| where UserId == 'object-id-of-the-account'
+| extend AccountCustomEntity = UserPrincipalName
+| extend IPCustomEntity = IPAddress
