@@ -1,0 +1,75 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspaceName": {
+            "type": "String",
+             "metadata": {
+              "description": "Specifies the name of the workspace."
+            }
+        },
+        "location": {
+            "type": "String",
+             "allowedValues": [
+               "eastus",
+               "westus"
+             ],
+             "defaultValue": "eastus",
+             "metadata": {
+               "description": "Specifies the location in which to create the workspace."
+             }
+        },
+        "sku": {
+            "type": "String",
+             "allowedValues": [
+              "Standalone",
+              "PerNode",
+               "PerGB2018"
+            ],
+             "defaultValue": "PerGB2018",
+             "metadata": {
+            "description": "Specifies the service tier of the workspace: Standalone, PerNode, Per-GB"
+         }
+          }
+    },
+    "variables": {
+        "KeyVault": {
+            "Name": "[Concat('KeyVaultAnalytics', '(', parameters('workspaceName'), ')')]",
+            "GalleryName": "KeyVaultAnalytics"
+          }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.OperationalInsights/workspaces",
+            "name": "[parameters('workspaceName')]",
+            "apiVersion": "2015-11-01-preview",
+            "location": "[parameters('location')]",
+            "properties": {
+                "sku": {
+                    "name": "[parameters('sku')]"
+                }
+            },
+            "resources": [
+                {
+                    "name": "[variables('KeyVault').Name]",
+                    "location": "[parameters('location')]",
+                    "type": "Microsoft.OperationsManagement/solutions",
+                    "id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.OperationsManagement/solutions/', variables('KeyVault').Name)]",
+                    "apiVersion": "2015-11-01-preview",
+                    "dependsOn": [
+                        "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]"
+                    ],
+                    "properties": {
+                        "workspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]"
+                    },
+                    "plan": {
+                        "name": "[variables('KeyVault').Name]",
+                        "publisher": "Microsoft",
+                        "product": "[Concat('OMSGallery/', variables('KeyVault').GalleryName)]",
+                        "promotionCode": ""
+                    }
+                }
+            ]
+          }
+       ]
+    }

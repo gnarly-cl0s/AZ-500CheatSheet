@@ -1,0 +1,6 @@
+SQL Injection:
+') ; TRUNCATE TABLE countryinfo --
+
+
+XSS:
+<script>alert("Hacker Here")</script>

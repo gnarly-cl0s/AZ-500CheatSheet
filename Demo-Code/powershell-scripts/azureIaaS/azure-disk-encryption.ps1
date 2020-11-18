@@ -1,4 +1,4 @@
-﻿$rgName = "hacktivity3"
+﻿$rgName = "keynervana"
 $location = "South Central US"
 
 Register-AzureRmResourceProvider -ProviderNamespace "Microsoft.KeyVault"

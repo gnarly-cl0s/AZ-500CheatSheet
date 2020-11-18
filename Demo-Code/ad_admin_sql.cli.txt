@@ -1,0 +1,1 @@
+az sql server ad-admin create --resource-group Pluralsight-06 --server-name azuresqlmsidemosrv --display-name admin_user --object-id [your-object-id]

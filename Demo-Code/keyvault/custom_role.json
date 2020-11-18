@@ -1,0 +1,14 @@
+{
+    "Name": "Secret Reader",
+    "Id": null,
+    "IsCustom": true,
+    "Description": "Allows for read access to secret properties, but not secret values",
+    "Actions": [
+      "Microsoft.KeyVault/vaults/read",
+      "Microsoft.KeyVault/vaults/secrets/read"
+    ],
+    "NotActions": [],
+    "AssignableScopes": [
+      "/subscriptions/SUBSCRIPTION_ID"
+    ]
+  }

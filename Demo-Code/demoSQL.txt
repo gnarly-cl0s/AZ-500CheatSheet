@@ -1,0 +1,22 @@
+Updated connection string
+-------------------------
+var connectingString = "Server=tcp:10.1.0.20,1433;" +
+                "Initial Catalog=MSIDEMO;Persist Security Info=False" +
+                ";User ID=[your user id];Password=[your password];MultipleActiveResultSets=False;" +
+                "Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;";
+
+
+
+SQL script to create the CountryInfo table
+------------------------------------------
+CREATE TABLE [dbo].[CountryInfo](
+       [Id] [int] IDENTITY(1,1) NOT NULL,
+       [Country] [nvarchar](50) NOT NULL,
+       [Capital] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+
+INSERT INTO CountryInfo (Country, Capital) VALUES ('Canada', 'Ottawa');
+INSERT INTO CountryInfo (Country, Capital) VALUES ('USA', 'Washington DC');
+INSERT INTO CountryInfo (Country, Capital) VALUES ('Mexico', 'Mexico City');
+GO
